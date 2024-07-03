@@ -1,5 +1,5 @@
 import './index.scss'
-import logo from '../../assets/img/idep logo.png'
+import logo from '../../assets/img/idep logo2.png'
 
 const Footer = () => {
     return (
@@ -7,7 +7,7 @@ const Footer = () => {
             <footer className='footer container'>
                 <div>
                     <a>
-                    <img className='logo' src={logo} alt="" />
+                    <img className='logo' src={logo} alt="Logo" />
                     </a>
                     <p>Lorem ipsum dolor sit, amet consectetur
                         adipisicing elit. Maiores alias cum</p>

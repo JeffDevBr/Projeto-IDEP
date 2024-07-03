@@ -1,5 +1,5 @@
 import "./index.scss"
-import idepLogo from "../../assets/img/idep logo.png"
+import idepLogo from "../../assets/img/idep logo2.png"
 import menu from "../../assets/img/icon-menu.svg"
 import lupa from "../../assets/img/lupa.svg"
 import instagram from "../../assets/img/icon-instagram.svg"
@@ -29,11 +29,11 @@ const Header = () => {
                         </form>
 
                         <nav className="social-menu">
-                            <ul>
-                                <li><a className="btn-primary-fill">Login</a></li>
-                                <li><a><img className="social"  src={instagram} alt="Icon Instagram" /></a></li>
-                                <li><a><img className="social"  src={youtube} alt="Icon Youtube" /></a></li>
-                                <li><a><img className="social"  src={facebook} alt="Icon Facebook" /></a></li>
+                            <ul className="social">
+                                <li><a className="btn-primary-fill login">Login</a></li>
+                                <li><a><i className="fa-brands fa-instagram"></i></a></li>
+                                <li><a><i className="fa-brands fa-facebook"></i></a></li>
+                                <li><a><i className="fa-brands fa-linkedin"></i></a></li>
                             </ul>
                         </nav>
 
