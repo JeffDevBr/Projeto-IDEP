@@ -1,0 +1,27 @@
+@use './variables';
+
+[class^='btn-']{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    text-align: none;
+
+    &:active{
+        transform: translateY(1px);
+    }
+
+    &.btn-primary-fill{
+        background-color: variables.$primary-color;
+        padding: 12px 28px;
+        color: variables.$text-color;
+    }
+
+    &.btn-menu{
+        background-color: variables.$primary-color;
+    }
+}

@@ -1,0 +1,122 @@
+@use '../../sass/variables';
+
+.header {
+    font-family: Inter;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    // background-color: variables.$black-color;
+
+
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+
+        .logo {
+            width: 128px;
+            margin-right: 20px;
+        }
+    }
+
+    .box-two {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        form {
+            flex: 1;
+
+            >div {
+                position: relative;
+                width: 100%;
+
+            }
+
+            input {
+                display: flex;
+                width: 90%;
+                padding: 10px 0 10px 35px;
+                border-radius: 5px;
+                outline: none;
+                border: 1px solid variables.$primary-color;
+                font-size: 16px;
+            }
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 2px;
+                transform: translateY(-50%);
+            }
+
+        }
+
+        .btn-primary-fill:hover{
+            background-color: #E0557B;
+            transform: scale(1.2);
+
+        }
+
+        .social:hover{
+          transform: scale(1.5);
+        }
+
+        .social-menu ul {
+            display: none;
+            align-items: center;
+            margin-left: 25px;
+        }
+
+        .social-menu a {
+            padding: 10px;
+        }
+
+    }
+
+
+    .links {
+        color: variables.$primary-color;
+        font-size: 1.1em;
+        font-weight: 600;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    .links ul {
+        max-width: 900px;
+        margin: 0 auto;
+        display: none;
+        justify-content: space-between;
+    }
+
+    .links ul li a{
+        padding: 5px 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .links ul li a:hover{
+        font-size: 1.11em;
+        text-decoration: underline;
+    }
+
+
+
+    @media (min-width: 992px) {
+        .btn-menu {
+            display: none;
+        }
+
+        .social-menu ul {
+            display: flex !important;
+        }
+
+        .links ul{
+            display: flex !important;
+        }
+
+    }
+
+}
