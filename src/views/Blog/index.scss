@@ -1,0 +1,29 @@
+blog-section {}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.blog-content {
+    padding: 20px;
+
+    .title {
+        text-align: center;
+        font-family: Inter;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px;
+        margin: 32px;
+
+    }
+
+    .blog-content-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

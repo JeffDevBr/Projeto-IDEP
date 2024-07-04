@@ -1,10 +1,9 @@
 import "./index.scss"
+import { Link } from 'react-router-dom'
 import idepLogo from "../../assets/img/idep logo2.png"
 import menu from "../../assets/img/icon-menu.svg"
 import lupa from "../../assets/img/lupa.svg"
-import instagram from "../../assets/img/icon-instagram.svg"
-import youtube from "../../assets/img/icon-youtube.svg"
-import facebook from "../../assets/img/icon-facebook.svg"
+
 
 import { BannerPrincipal } from "../BannerPrincipal/BannerPrincipal"
 
@@ -43,11 +42,11 @@ const Header = () => {
 
                 <nav className="links">
                     <ul>
-                        <li><a>Home</a></li>
-                        <li><a>Produto</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Sobre Nós</a></li>
-                        <li><a>Contato</a></li>
+                        <li><Link to={'/'}>Home</Link> </li>
+                        <li><Link to={'/Produtos' }> Produtos</Link></li>
+                        <li> <Link to={'/Blog'}>Blog</Link></li>
+                        <li> <Link to={'/Sobre'}>Sobre Nós</Link></li>
+                        <li><Link to={'/Contato'}> Contato </Link></li>
                     </ul>
                 </nav>
             </header>

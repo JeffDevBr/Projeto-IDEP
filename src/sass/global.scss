@@ -3,3 +3,11 @@
     max-width: 1300px;
     margin: 0 auto;
 }
+
+
+.layout-style-main-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
