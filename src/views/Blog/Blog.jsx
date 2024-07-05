@@ -6,6 +6,8 @@ import { key } from 'localforage'
 
 const Blog = ({ data }) => {
 
+    const artigosReversos = [...data].reverse()
+
     return (
         <section className='blog-section'>
 
@@ -16,11 +18,10 @@ const Blog = ({ data }) => {
             <h1 className='title'> Blog News</h1>
                     <div className="blog-content-cards">
                         {
-                            data.map(artigo => (
+                            artigosReversos.map(artigo => (
                                 <CardArtigos key={artigo.id} data={artigo} />
                             ))}
                     </div>
-
 
                 </div>
 
