@@ -1,10 +1,20 @@
 import './index.scss'
+
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import { Footer } from "../../components/Footer/Footer"
 import { Header } from "../../components/Header/Header"
 import { CardArtigos } from '../../components/CardArtigos/CardArtigos'
-import { key } from 'localforage'
 
 const Blog = ({ data }) => {
+
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
+
 
     const artigosReversos = [...data].reverse()
 
