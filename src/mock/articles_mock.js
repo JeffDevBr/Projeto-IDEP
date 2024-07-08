@@ -2,7 +2,6 @@ export const ARTICLES_MOCK = [
   {
     id: 1,
     imgPath: "build-your-pc.jpg",
-    imgPathLeitura: "../../../public/build-your-pc.jpg",
     title: "Como Montar o PC Gamer Perfeito",
     author: "Carlos Almeida",
     publicationDate: "2024-07-03",

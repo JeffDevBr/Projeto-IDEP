@@ -3,15 +3,21 @@
 .header {
     font-family: Inter;
     flex-direction: column;
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
+    // border-bottom: 1px solid #ccc;
+    box-shadow: 0 1px 5px #13269395;
+    padding-bottom: 8px;
     // background-color: variables.$black-color;
 
+    .back{
+        background: #132793;
 
+    }
 
     .menu {
         display: flex;
         align-items: center;
+        width: 100%;
+        padding: 20px;
 
 
         .logo {
@@ -70,11 +76,14 @@
             }
         }
 
-
         .social-menu ul {
             display: none;
             align-items: center;
             margin-left: 25px;
+
+            li{
+                padding: 10px;
+            }
         }
 
         .social-menu a {

@@ -1,6 +1,8 @@
 import { Footer } from "../../components/Footer/Footer"
 import { Header } from "../../components/Header/Header"
+import { ListaDeProdutos } from "../../components/ProductCard/ProductCard"
 import "./index.scss"
+
 
 const Produtos = () => {
     return (
@@ -8,8 +10,15 @@ const Produtos = () => {
             <Header />
 
             <div className="layout-style-main-footer">
-                <div className="container">
-                    <h1> Produtos </h1>
+                <div className="container produtos">
+                    <div className="cards-produtos">
+                        <ListaDeProdutos />
+                    </div>
+                    <div className="banner"> </div>
+                    <div>
+                        <ListaDeProdutos />
+                    </div>
+                    <div className="banner"> </div>
                 </div>
 
                 <Footer />

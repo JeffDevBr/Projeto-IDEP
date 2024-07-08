@@ -1,0 +1,22 @@
+.produtos{
+    margin: 50px auto;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .cards-produtos{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .banner{
+        background: #132793;
+        margin: 50px;
+        width: 100%;
+        height: 238px;
+    }
+}
