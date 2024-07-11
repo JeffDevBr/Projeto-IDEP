@@ -1,0 +1,28 @@
+.noticias-home {
+    padding: 20px;
+  
+    .noticias-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .home-noticias {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+  
+      @media (max-width: 996px) {
+        flex-direction: column;
+      }
+  
+      .card-artigos {
+        flex: 1;
+        max-width: 32%; 
+  
+        @media (max-width: 768px) {
+          max-width: 100%; 
+        }
+      }
+    }
+  }
+  

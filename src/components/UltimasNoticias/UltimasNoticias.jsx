@@ -6,9 +6,9 @@ const UltimasNoticias = ({ data }) => {
    
     return (
         <section className="ultimas-noticias">
-            <h1>Últimas noticias</h1>
+            <h1><span className="noticias-title">Últimas noticias</span></h1>
 
-            <div>
+            <div className="home-noticias">
                 {
                     artigosFiltrados.map(artigo => (
                         <CardArtigos key={artigo.id} data={artigo} />
