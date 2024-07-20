@@ -41,7 +41,7 @@ const Time = () => {
 
   return (
     <>
-      <h1>Mega Promoção</h1>
+      <h1>Promoção acaba em:</h1>
       <div className="time">
         <p><span id="dia">{textFormat(timeLeft.days)}</span> Dias </p>
         <p><span id="hora">{textFormat(timeLeft.hours)}</span> Horas </p>

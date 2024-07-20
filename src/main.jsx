@@ -42,8 +42,6 @@ const Layout = () => {
     }
   }
 
-
-
   return (
     <CartContext.Provider value={{ isCartOpen, setIsCartOpen, cartItems, addToCart, decreaseUnit, removeFromCart }}>
       <CartOverlay />

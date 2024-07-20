@@ -1,6 +1,6 @@
-.cartOverlay{
+.cartOverlay {
     display: flex;
-    z-index: 10;
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;
@@ -8,12 +8,12 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.755);
 
-    .overlay{
+    .overlay {
         width: 75vw;
     }
 
-    .cart{
-        width: 500px;
+    .cart {
+        width: 700px;
         background-color: rgb(32, 132, 219);
         border-left: 5px solid gray;
         padding: 20px;
@@ -24,10 +24,98 @@
     }
 }
 
-.none{
+.none {
     display: none;
 }
 
-// .cartOverlay-translate-x{
-//     transform: translateX(500px);
-// }
+.cartOverlay-header {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    p {
+        padding-top: 13px;
+    }
+
+    .fa-xmark {
+        font-size: 20px;
+        color: white;
+        padding: 10px;
+    }
+}
+
+
+.cart-products {
+    overflow-y: scroll;
+    padding: 10px;
+
+}
+
+
+.cart-item {
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    color: rgb(74, 74, 74);
+    display: flex;
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+
+    .position-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    img {
+        width: 100px;
+        object-fit: contain;
+    }
+
+    .fa-xmark {
+        font-size: 20px;
+        color: rgb(138, 74, 74);
+        padding: 10px;
+    }
+
+
+    .cart-item-produto {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        .box-cart-item {
+            padding-top: 20px;
+            padding-left: 10px;
+
+            .name-produto {
+                margin: 0;
+                font-family: 'inter';
+                font-weight: bold;
+            }
+
+            .value-product {
+                font-family: 'inter';
+                font-weight: bold;
+                color: green;
+            }
+        }
+
+
+
+        .cart-item-decrement-add {
+            display: flex;
+            margin-bottom: 10px;
+           
+            right: 10px;
+            bottom: 0;
+
+            button {
+                padding: 0 10px;
+            }
+        }
+    }
+}

@@ -8,13 +8,13 @@ const CarouselComponent = () => {
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src="imagem1.png" className="d-block w-100" alt="..." />
+          <img src="baner1.png" className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-item">
-          <img src="imagem2.jpg" className="d-block w-100" alt="..." />
+          <img src="baner2.png" className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-item">
-          <img src="imagem3.jpg" className="d-block w-100" alt="..." />
+          <img src="baner4.png" className="d-block w-100" alt="..." />
         </div>
       </div>
       <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

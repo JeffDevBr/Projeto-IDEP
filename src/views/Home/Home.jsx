@@ -14,15 +14,16 @@ const Home = ({ data }) => {
         <section>
             <div className='top'>
                 <Header />
-                
+
             </div>
             <div className='layout-style-main-footer'>
                 <div className=''>
                     <div className="home">
                         <section className="container">
-                            <h1>Home</h1>
-                            <ProductContainer />
+                            <div className='home-carousel'>
                             <CarouselComponent />
+                            </div>
+                            <ProductContainer />
                         </section>
 
 
@@ -38,7 +39,7 @@ const Home = ({ data }) => {
                             <br></br> <br></br>
 
                             <div className='noticias'>
-                                <NoticiasHome data={data}/>
+                                <NoticiasHome data={data} />
                             </div>
 
                         </div>
