@@ -1,0 +1,33 @@
+.cartOverlay{
+    display: flex;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.755);
+
+    .overlay{
+        width: 75vw;
+    }
+
+    .cart{
+        width: 500px;
+        background-color: rgb(32, 132, 219);
+        border-left: 5px solid gray;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+    }
+}
+
+.none{
+    display: none;
+}
+
+// .cartOverlay-translate-x{
+//     transform: translateX(500px);
+// }

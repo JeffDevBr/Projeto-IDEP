@@ -1,35 +1,28 @@
-import mockProdutos from '../../mock/product_mock'
+import { useContext } from 'react'
+import { CartContext } from '../contexts/CartContext'
 import './index.scss'
 
-
-const ProdutoCard = ({ produto }) => {
+const ProdutoCard = ({id, img, nome, avaliacao, valor }) => {
+    const {addToCart} = useContext(CartContext)
     return (
         <div className="produto-card">
             <div className='card-top'>
-                <img src={produto.img} alt={produto.nome} />
+                <img src={img} alt={nome} />
             </div>
             <div className='card-main'>
 
-                <h2>{produto.nome}</h2>
+                <h2>{nome}</h2>
                 <div className="avaliacao">
-                    {"★".repeat(produto.avaliacao) + "☆".repeat(5 - produto.avaliacao)}
+                    {"★".repeat(avaliacao) + "☆".repeat(5 - avaliacao)}
                 </div>
-                <p>R${produto.valor.toFixed(2)}</p>
-                <span>1x de R$ {produto.valor.toFixed(2)} sem juros no cartão de
+                <p>R${valor.toFixed(2)}</p>
+                <span>1x de R$ {valor.toFixed(2)} sem juros no cartão de
                 credito</span>
+               
             </div>
+            <button onClick={() => addToCart(id)} className='btn-primary-fill'>Comprar</button>
         </div>
     )
 }
 
-const ListaDeProdutos = () => {
-    return (
-        <div className="lista-produtos">
-            {mockProdutos.map(produto => (
-                <ProdutoCard key={produto.id} produto={produto} />
-            ))}
-        </div>
-    )
-}
-
-export { ListaDeProdutos }
+export {ProdutoCard}

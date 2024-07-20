@@ -1,5 +1,39 @@
 @use '../../sass/variables';
 
+.btn-car {
+    position: relative;
+
+    .car {
+        position: absolute;
+        display: inline;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+        background-color: rgb(169, 45, 14);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 8px;
+        border: 2px solid white;
+        border-radius: 50%;
+        top: -15px;
+        right: 5px;
+        
+
+    }
+}
+
+
+.fa-cart-shopping {
+    color: white;
+    font-size: 20px;
+    margin-right: 30px;
+    margin-top: 5px;
+
+}
+
 #drawer {
     font-family: inter;
 
@@ -107,6 +141,7 @@
 }
 
 
+
 .header {
     font-family: Inter;
     flex-direction: column;
@@ -172,9 +207,9 @@
         }
 
         .social {
-            .fa-brands {
+            .fa-solid {
                 font-size: 25px;
-                color: variables.$primary-color;
+                color: white;
 
                 &:hover {
                     color: rgb(121, 198, 217);

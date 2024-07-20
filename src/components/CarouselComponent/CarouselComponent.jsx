@@ -11,10 +11,10 @@ const CarouselComponent = () => {
           <img src="imagem1.png" className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-item">
-          <img src="imagem2.png" className="d-block w-100" alt="..." />
+          <img src="imagem2.jpg" className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-item">
-          <img src="imagem3.png" className="d-block w-100" alt="..." />
+          <img src="imagem3.jpg" className="d-block w-100" alt="..." />
         </div>
       </div>
       <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

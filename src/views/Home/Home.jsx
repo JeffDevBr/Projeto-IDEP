@@ -3,9 +3,10 @@ import './index.scss'
 import { Header } from "../../components/Header/Header"
 import { Footer } from "../../components/Footer/Footer"
 import { CarouselComponent } from '../../components/CarouselComponent/CarouselComponent'
-import { ListaDeProdutos } from "../../components/ProductCard/ProductCard"
 import { Time } from '../../components/Time/Time'
 import { NoticiasHome } from '../../components/NocitiasHome/NocitiasHome'
+import { ProductContainer } from '../../components/ProductCard/ProductContainer'
+import { CartOverlay } from '../../components/Cart/CartOverlay'
 
 
 const Home = ({ data }) => {
@@ -13,12 +14,14 @@ const Home = ({ data }) => {
         <section>
             <div className='top'>
                 <Header />
+                
             </div>
             <div className='layout-style-main-footer'>
                 <div className=''>
                     <div className="home">
                         <section className="container">
                             <h1>Home</h1>
+                            <ProductContainer />
                             <CarouselComponent />
                         </section>
 
@@ -32,9 +35,7 @@ const Home = ({ data }) => {
                     </div>
                     <div className="container">
                         <div>
-                            <ListaDeProdutos />
                             <br></br> <br></br>
-                            <ListaDeProdutos />
 
                             <div className='noticias'>
                                 <NoticiasHome data={data}/>

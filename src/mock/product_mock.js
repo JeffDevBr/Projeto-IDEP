@@ -38,3 +38,9 @@ const mockProdutos = [
   
   export default mockProdutos;
   
+  export const catalogIndexedById = mockProdutos.reduce((acc, currentValue) => {
+    const { id } = currentValue;
+    acc[id] = currentValue;
+    return acc;
+  }, {});
+  

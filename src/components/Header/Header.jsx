@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
+import { CartContext, getAmountOfItemsInCart } from '../contexts/CartContext';
 import { Link, useLocation } from 'react-router-dom';
 import './index.scss';
 import idepLogo from '../../assets/img/log2.png';
@@ -8,8 +9,14 @@ import closeIcon from '../../assets/img/icon-close.svg';
 import { BannerPrincipal } from '../BannerPrincipal/BannerPrincipal';
 
 const Header = () => {
+  const [amountOfItems, setAmountOfItems] = useState(0)
+  const { setIsCartOpen, cartItems } = useContext(CartContext)
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    setAmountOfItems(getAmountOfItemsInCart(cartItems))
+  }, [cartItems])
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
@@ -78,13 +85,26 @@ const Header = () => {
                   <img src={lupa} alt="Lupa" />
                 </div>
               </form>
+
+
+              {/* carrinho */}
+              <div>
+                <button onClick={() => setIsCartOpen(true)} className='btn-car'>
+                  <i className="fa-solid fa-cart-shopping"></i>
+
+                  {amountOfItems > 0 && (
+                    <div id='cart-amount' className='car'>
+                    {amountOfItems}
+                    </div>)}
+                </button>
+              </div>
+
+
+
               <nav className="social-menu">
                 <ul className="social">
                   <li><a className="btn-primary-fill login">Cadastrar</a></li>
                   <li><a className="btn-primary-fill login">Login</a></li>
-                  <li><a><i className="fa-brands fa-instagram"></i></a></li>
-                  <li><a><i className="fa-brands fa-facebook"></i></a></li>
-                  <li><a><i className="fa-brands fa-linkedin"></i></a></li>
                 </ul>
               </nav>
               <button type="button" onClick={toggleDrawer} className="btn-menu" data-drawer="open">
